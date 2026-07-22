@@ -1,70 +1,22 @@
-# AutoML Image Classification
+## Model
 
-An end-to-end image classification pipeline developed using TensorFlow and AutoKeras.
+The trained model is intentionally excluded from this repository to keep it lightweight.
 
-## Features
-
-- AutoML image classification
-- Batch image prediction
-- Automatic preprocessing
-- Top-3 predictions
-- CSV export
-- Error handling
-- Prediction statistics
-- Image visualization
-
-## Technologies
-
-- Python
-- TensorFlow
-- AutoKeras
-- NumPy
-- Matplotlib
-
-## Project Structure
-
-```
-AutoML_Image_Classification/
-│
-├── images/
-├── saved_models/
-├── predict.py
-├── train_autokeras.py
-├── requirements.txt
-├── README.md
-└── .gitignore
-```
-
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-## Training
+Before running predictions, generate the model by executing:
 
 ```bash
 python train_autokeras.py
 ```
 
-## Prediction
+This will create the following directory automatically:
+
+```
+saved_models/
+└── Best_Model_AK.keras
+```
+
+Once the model has been generated, you can run:
 
 ```bash
 python predict.py
 ```
-
-The script automatically:
-
-- scans all images in the `images` folder
-- preprocesses them
-- predicts the class
-- shows the Top-3 predictions
-- exports the results to `risultati.csv`
-
-## Dataset
-
-The model is trained on the CIFAR-10 dataset.
-
-## Author
-
-Edoardo Rebughini
